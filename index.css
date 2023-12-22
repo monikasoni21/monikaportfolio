@@ -1,0 +1,141 @@
+body {
+    background: radial-gradient(circle, #000, #1d4b79);
+    height: 100vh;
+}
+
+.wrapper span {
+    position: fixed;
+    animation: animate 2s linear infinite;
+}
+.wrapper span i {
+    color: #ffff;
+    font-size: 18px;
+
+}
+.wrapper span:nth-child(1){
+    left: 60px;
+    animation-delay: 0.6s;
+    top: 5%;
+}
+.wrapper span:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    top: 40%;
+}
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 5s;
+    top: 15%;
+}
+.wrapper span:nth-child(4){
+    left: 20%;
+    animation-delay: 4s;
+    top: 67%;
+
+}
+.wrapper span:nth-child(5){
+ left: 40%;
+ animation-delay: .5s;
+ top: 85%;
+}
+.wrapper span:nth-child(6){
+left: 50%;
+animation-delay: 5s;
+top: 23%;
+
+}
+.wrapper span:nth-child(7){
+
+    left: 60%;
+    animation-delay: 6s;
+    top: 65%;
+
+}
+.wrapper span:nth-child(8){
+ left: 70%;
+ animation-delay: 3.5s;
+ top: 12%;
+}
+.wrapper span:nth-child(9){
+    left: 80%;
+ animation-delay: 9s;
+ top: 75%;
+}
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 3;
+    top: 14%;
+}
+.box-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #ffff; */
+    height: 100vh;
+    z-index: 1;
+}
+.text-area h2{
+    -webkit-text-fill-color: #ffff;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ffff;
+    font-family: montserrat;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    initial-letter: 2px;
+
+
+}
+.text-area a{
+    -webkit-text-fill-color: #ffff;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ffff;
+    font-family: montserrat;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    initial-letter: 2px;
+    justify-content: center;
+    align-items: center;
+padding: 300px;
+
+}
+.text-area h2{
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    
+}
+@keyframes animate{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+/* @media screen  and (max-width:400px){
+    .text-area a{
+     padding-left: 45px;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+    }
+}
+@media screen  and (max-width:742px) {
+    
+    .text-area a{
+        padding: 260px;
+    }
+    
+} */
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .text-area  a{
+     padding-left: 90px;
+    }
+  }
